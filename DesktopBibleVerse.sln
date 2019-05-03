@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WersetownikNaPulpit", "WersetownikNaPulpit\WersetownikNaPulpit.csproj", "{8314431B-0C18-48A2-9C70-009BDDD4C894}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopBibleVerse", "DesktopBibleVerse\DesktopBibleVerse.csproj", "{8314431B-0C18-48A2-9C70-009BDDD4C894}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
