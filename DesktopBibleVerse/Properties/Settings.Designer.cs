@@ -25,7 +25,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("000000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("FFFFFF")]
         public string Background {
             get {
                 return ((string)(this["Background"]));
@@ -37,7 +37,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("22")]
+        [global::System.Configuration.DefaultSettingValueAttribute("99")]
         public string Alpha {
             get {
                 return ((string)(this["Alpha"]));
@@ -49,7 +49,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        [global::System.Configuration.DefaultSettingValueAttribute("500")]
         public double MaxWidth {
             get {
                 return ((double)(this["MaxWidth"]));
@@ -61,7 +61,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        [global::System.Configuration.DefaultSettingValueAttribute("25")]
         public double FontSizeVerse {
             get {
                 return ((double)(this["FontSizeVerse"]));
@@ -73,25 +73,49 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("14")]
-        public double FontSizeScripture {
+        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        public double FontSizeRef {
             get {
-                return ((double)(this["FontSizeScripture"]));
+                return ((double)(this["FontSizeRef"]));
             }
             set {
-                this["FontSizeScripture"] = value;
+                this["FontSizeRef"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("FFFFFF")]
+        [global::System.Configuration.DefaultSettingValueAttribute("000000")]
         public string FontColor {
             get {
                 return ((string)(this["FontColor"]));
             }
             set {
                 this["FontColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int VerseIndex {
+            get {
+                return ((int)(this["VerseIndex"]));
+            }
+            set {
+                this["VerseIndex"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe Print")]
+        public string Font {
+            get {
+                return ((string)(this["Font"]));
+            }
+            set {
+                this["Font"] = value;
             }
         }
     }

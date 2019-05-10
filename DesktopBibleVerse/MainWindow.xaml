@@ -3,32 +3,42 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DesktopBibleVerse" KeyDown="Window_KeyDown"
-        mc:Ignorable="d" MouseUp="Window_MouseUp"
-        Title="MainWindow" AllowsTransparency="True" Background="Transparent" WindowStyle="None" MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+        xmlns:local="clr-namespace:DesktopBibleVerse" KeyDown="Window_KeyDown" ShowInTaskbar="False"
+        mc:Ignorable="d" MouseUp="Window_MouseUp" StateChanged="Window_StateChanged"
+        Title="DesktopBibleVerse" AllowsTransparency="True" Background="Transparent" WindowStyle="None" MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen" LocationChanged="Window_LocationChanged">
     <Window.ContextMenu>
         <ContextMenu>
-            <MenuItem x:Name="miNext" Header="Next" Click="MiNext_Click">
+            <MenuItem x:Name="miNext" Header="Další" Click="MiNext_Click">
                 <MenuItem.Icon>
-                    <Image Source="Resources/right.png"/>
+                    <Image Source="pack://siteoforigin:,,,/Resources/right.png" />
                 </MenuItem.Icon>
             </MenuItem>
-            <MenuItem x:Name="miPrevious" Header="Previous" Click="MiPrevious_Click">
+            <MenuItem x:Name="miPrevious" Header="Předchozí" Click="MiPrevious_Click">
                 <MenuItem.Icon>
-                    <Image Source="Resources/left.png"/>
+                    <Image Source="pack://siteoforigin:,,,/Resources/left.png" />
                 </MenuItem.Icon>
             </MenuItem>
-            <MenuItem x:Name="miSetup" Header="Setup" Click="MiSetup_Click">
+            <MenuItem x:Name="miRandom" Header="Náhodný" Click="MiRandom_Click">
                 <MenuItem.Icon>
-                    <Image Source="Resources/setup.png"/>
+                    <Image Source="pack://siteoforigin:,,,/Resources/random.png" />
+                </MenuItem.Icon>                
+            </MenuItem>
+            <MenuItem x:Name="miSetup" Header="Nastavení" Click="MiSetup_Click">
+                <MenuItem.Icon>
+                    <Image Source="pack://siteoforigin:,,,/Resources/setup.png" />
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="miClose" Header="Zavřít" Click="MiClose_Click">
+                <MenuItem.Icon>
+                    <Image Source="pack://siteoforigin:,,,/Resources/close.png" />
                 </MenuItem.Icon>
             </MenuItem>
         </ContextMenu>
     </Window.ContextMenu>
-    <Border x:Name="bbb"  BorderBrush="Black" BorderThickness="0" CornerRadius="20" Height="Auto" VerticalAlignment="Top" Background="#22000000" HorizontalAlignment="Left">
-        <StackPanel HorizontalAlignment="Left" Margin="15,0">
-            <TextBlock x:Name="lblVerse" MinHeight="30" Text="Label" FontSize="20" FontWeight="Bold" Padding="5,5,5,5" TextWrapping="Wrap" MaxWidth="300" TextAlignment="Center"/>
-            <Label x:Name="lblScripture" MinHeight="30" Content="Label" FontWeight="Bold" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14"/>
+    <Border x:Name="bbb" MaxWidth="1000" BorderBrush="Black" BorderThickness="0" CornerRadius="20" Height="Auto" VerticalAlignment="Top" Background="#22000000" HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Left" Margin="15,7">
+            <TextBlock x:Name="lblVerse" MinHeight="30" Text="Label" FontSize="20" FontWeight="Bold" Padding="5,5,5,5" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Segoe Print"/>
+            <Label x:Name="lblRef" MinHeight="30" Content="Label" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" FontFamily="Segoe Print"/>
         </StackPanel>
     </Border>
 </Window>
