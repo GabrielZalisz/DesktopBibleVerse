@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopBibleVerse" KeyDown="Window_KeyDown" ShowInTaskbar="False"
         mc:Ignorable="d" MouseUp="Window_MouseUp" StateChanged="Window_StateChanged"
-        Title="DesktopBibleVerse" AllowsTransparency="True" Background="Transparent" WindowStyle="None" MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen" LocationChanged="Window_LocationChanged">
+        Title="DesktopBibleVerse" AllowsTransparency="True" Background="Transparent" WindowStyle="None" MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen" >
     <Window.ContextMenu>
         <ContextMenu>
             <MenuItem x:Name="miNext" Header="Další" Click="MiNext_Click">

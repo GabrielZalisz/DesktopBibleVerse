@@ -32,9 +32,8 @@ namespace DesktopBibleVerse
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             WPS.WPS_Window_Loaded(this);
-            this.Width = 1000;//zrušit WPS width
-            //string text = File.ReadAllText("verselist.txt");
-      string text = @"Iz 44:6: Toto praví Hospodin, král Izraele a jeho vykupitel, Hospodin zástupů: Já jsem první a já jsem poslední; kromě mne není žádný Bůh. 
+
+            string text = @"Iz 44:6: Toto praví Hospodin, král Izraele a jeho vykupitel, Hospodin zástupů: Já jsem první a já jsem poslední; kromě mne není žádný Bůh. 
 Iz 43:11,15: Já, já jsem Hospodin a kromě mne žádný zachránce není. … Já jsem Hospodin, váš Svatý, stvořitel Izraele, váš král. 
 Iz 44:24: Toto praví Hospodin, tvůj vykupitel, a ten, který tě utvářel od lůna matky: Já jsem Hospodin, který činím všechno: Já sám roztahuji nebesa, kdo byl se mnou, když jsem rozprostíral zemi? 
 J 8:12: Ježíš k nim opět promluvil: Já jsem světlo světa. Kdo mne následuje, nebude chodit ve tmě, ale bude mít světlo života. 
@@ -145,13 +144,20 @@ Zj 22:7: A hle, přijdu brzy. Blahoslavený, kdo zachovává slova proroctví to
 Zj 22:13: Já jsem Alfa i Omega, první i poslední, počátek i konec. 
 Zj 22:17: A Duch i Nevěsta praví: Přijď. A kdo slyší, ať řekne: Přijď. A kdo žízní, ať přijde, a kdo chce, ať si zdarma vezme vodu života. 
 Zj 22:18-19: Já dosvědčuji každému, kdo slyší slova proroctví tohoto svitku: kdo by k nim něco přidal, tomu Bůh přidá ran zapsaných v tomto svitku; a kdo by ze slov svitku tohoto proroctví něco odejmul, tomu Bůh odejme jeho díl ze stromu života a ze svatého města, které byly popsány v tomto svitku. ";
-      lv = GH. ReadVerses(text);
+            lv = GH.ReadVerses(text);
 
             LoadSettings();
 
+            this.LocationChanged += Window_LocationChanged;
+            this.Width = 1000;//zrušit WPS width     
+
             origL = Left;
             origT = Top;
+
+            loaded = true;
         }
+
+        bool loaded = false;
 
         public void LoadSettings()
         {
@@ -172,6 +178,8 @@ Zj 22:18-19: Já dosvědčuji každému, kdo slyší slova proroctví tohoto svi
 
         public void SaveSettings()
         {
+            if (!loaded)
+                return;
             SolidColorBrush b = (SolidColorBrush)bbb.Background;
             string color = BitConverter.ToString(new byte[] { b.Color.R, b.Color.G, b.Color.B }).Replace("-", "");
             string alpha = BitConverter.ToString(new byte[] { b.Color.A });
