@@ -20,7 +20,7 @@
             </MenuItem>
             <MenuItem x:Name="miRandom" Header="Náhodný" Click="MiRandom_Click">
                 <MenuItem.Icon>
-                    <Image Source="pack://siteoforigin:,,,/Resources/random.png" />
+                    <Image Source="/Resources/random.png" />
                 </MenuItem.Icon>                
             </MenuItem>
             <MenuItem x:Name="miSetup" Header="Nastavení" Click="MiSetup_Click">

@@ -7,7 +7,7 @@
         mc:Ignorable="d" MouseDown="Window_MouseDown"   
         Title="Settings" Height="540" Width="410" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
 
-    <Border Background="White" BorderBrush="DarkSlateBlue" BorderThickness="5" CornerRadius="20">
+    <Border Background="White" BorderBrush="#FF110B38" BorderThickness="5" CornerRadius="20">
         <Grid>
             <Grid.LayoutTransform>
                 <TransformGroup>

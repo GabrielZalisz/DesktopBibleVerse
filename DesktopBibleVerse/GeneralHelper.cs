@@ -162,10 +162,10 @@ namespace DesktopBibleVerse
             string[] radky = file.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
             foreach (string r in radky)
             {
-                string[] a = r.Split(new string[] { "\t" }, StringSplitOptions.RemoveEmptyEntries);
-                if (a.Length > 1)
+                string[] a = r.Split(new string[] { ":" }, StringSplitOptions.RemoveEmptyEntries);
+                if (a.Length >= 3) //Iz 44:6: Toto praví Hospodin, král Izraele a jeho vykupitel, Hospodin zástupů: Já jsem první a já jsem poslední; kromě mne není žádný Bůh.
                 {
-                    Verse v = new Verse(a[0], a[1]);
+                    Verse v = new Verse(string.Join(":", a.Skip(2)), string.Join(":", a.Take(2)));
                     lv.Add(v);
                 }
             }
@@ -180,8 +180,8 @@ namespace DesktopBibleVerse
 
         public Verse(string text, string reff)
         {
-            Text = text;
-            Ref = reff;
+            Text = (text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1)).TrimEnd(',').TrimEnd(';').Replace("--", "–");
+            Ref = reff.Trim();
         }
     }
 }

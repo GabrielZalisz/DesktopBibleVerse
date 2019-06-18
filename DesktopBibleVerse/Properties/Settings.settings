@@ -3,22 +3,22 @@
   <Profiles />
   <Settings>
     <Setting Name="Background" Type="System.String" Scope="User">
-      <Value Profile="(Default)">FFFFFF</Value>
+      <Value Profile="(Default)">191970</Value>
     </Setting>
     <Setting Name="Alpha" Type="System.String" Scope="User">
-      <Value Profile="(Default)">99</Value>
+      <Value Profile="(Default)">CC</Value>
     </Setting>
     <Setting Name="MaxWidth" Type="System.Double" Scope="User">
       <Value Profile="(Default)">500</Value>
     </Setting>
     <Setting Name="FontSizeVerse" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">25</Value>
-    </Setting>
-    <Setting Name="FontSizeRef" Type="System.Double" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
+    <Setting Name="FontSizeRef" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
     <Setting Name="FontColor" Type="System.String" Scope="User">
-      <Value Profile="(Default)">000000</Value>
+      <Value Profile="(Default)">FFFFFF</Value>
     </Setting>
     <Setting Name="VerseIndex" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>

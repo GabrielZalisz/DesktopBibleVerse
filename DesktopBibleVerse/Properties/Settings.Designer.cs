@@ -25,7 +25,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("FFFFFF")]
+        [global::System.Configuration.DefaultSettingValueAttribute("191970")]
         public string Background {
             get {
                 return ((string)(this["Background"]));
@@ -37,7 +37,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("99")]
+        [global::System.Configuration.DefaultSettingValueAttribute("CC")]
         public string Alpha {
             get {
                 return ((string)(this["Alpha"]));
@@ -61,7 +61,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("25")]
+        [global::System.Configuration.DefaultSettingValueAttribute("20")]
         public double FontSizeVerse {
             get {
                 return ((double)(this["FontSizeVerse"]));
@@ -73,7 +73,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        [global::System.Configuration.DefaultSettingValueAttribute("15")]
         public double FontSizeRef {
             get {
                 return ((double)(this["FontSizeRef"]));
@@ -85,7 +85,7 @@ namespace DesktopBibleVerse.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("000000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("FFFFFF")]
         public string FontColor {
             get {
                 return ((string)(this["FontColor"]));
